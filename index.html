@@ -471,7 +471,8 @@
           </div>
 
           <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <!-- <form id="contact-form" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200"> -->
+            <form id="contact-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -517,6 +518,28 @@
 
               </div>
             </form>
+            
+            <!-- Remover esses scripts quando estiver na hospedagem correta -->
+            <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+            <script type="text/javascript">
+              (function(){
+                emailjs.init("0WpIlp-75mexJ4vxY");
+              })();
+            </script>
+
+            <script type="text/javascript">
+              document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                emailjs.sendForm('service_gse2t5j', 'template_n7nsndu', this)
+                  .then(function() {
+                    alert('Mensagem enviada com sucesso!');
+                  }, function(error) {
+                    alert('Falha ao enviar a mensagem: ' + JSON.stringify(error));
+                  });
+              });
+            </script>
+
+
           </div><!-- End Contact Form -->
 
         </div>

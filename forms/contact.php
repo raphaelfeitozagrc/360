@@ -14,7 +14,8 @@
   $contact->to = $receiving_email_address;
   $contact->from_name = $_POST['name'];
   $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
+  //$contact->subject = $_POST['subject'];
+  $contact->subject = 'Nova mensagem de contato através do site';
 
   // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
   /*
