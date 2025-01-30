@@ -251,7 +251,7 @@ h6 {
   background: var(--accent-color);
   font-size: 14px;
   padding: 8px 25px;
-  margin: 0 0 0 30px;
+  margin: 0 0 0 15px;
   border-radius: 50px;
   transition: 0.3s;
 }
@@ -265,19 +265,19 @@ h6 {
 /* Edição */
 .header .btn-getstarted2,
 .header .btn-getstarted2:focus {
-  color: var(--contrast-color2);
-  background: var(--accent-color2);
+  color: var(--contrast-color);
+  background: #4F9CF9;
   font-size: 14px;
   padding: 8px 25px;
-  margin: 0 0 0 30px;
+  margin: 0 15px 0 15px;
   border-radius: 50px;
   transition: 0.3s;
 }
 
 .header .btn-getstarted2:hover,
 .header .btn-getstarted2:focus:hover {
-  color: var(--contrast-color2);
-  background: color-mix(in srgb, var(--accent-color2), transparent 15%);
+  color: var(--contrast-color);
+  background: color-mix(in srgb, #4F9CF9, transparent 15%);
 }
 
 @media (max-width: 1200px) {
@@ -674,6 +674,10 @@ h6 {
   font-size: 24px;
   font-weight: 600;
   font-family: var(--heading-font);
+}
+
+.footer .footer-about img {
+  max-height: 100px;
 }
 
 .footer .footer-contact p {
@@ -1639,17 +1643,17 @@ section,
 /*--------------------------------------------------------------
 # Service Details Section
 --------------------------------------------------------------*/
-.service-details .service-box {
+.servicos .service-box {
   background-color: var(--surface-color);
   padding: 20px;
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
 }
 
-.service-details .service-box+.service-box {
+.servicos .service-box+.service-box {
   margin-top: 30px;
 }
 
-.service-details .service-box h4 {
+.servicos .service-box h4 {
   font-size: 20px;
   font-weight: 700;
   border-bottom: 2px solid color-mix(in srgb, var(--default-color), transparent 92%);
@@ -1657,11 +1661,11 @@ section,
   margin-bottom: 15px;
 }
 
-.service-details .services-list {
+.servicos .services-list {
   background-color: var(--surface-color);
 }
 
-.service-details .services-list a {
+.servicos .services-list a {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   background-color: color-mix(in srgb, var(--default-color), transparent 96%);
   display: flex;
@@ -1671,31 +1675,31 @@ section,
   transition: 0.3s;
 }
 
-.service-details .services-list a:first-child {
+.servicos .services-list a:first-child {
   margin-top: 0;
 }
 
-.service-details .services-list a i {
+.servicos .services-list a i {
   font-size: 16px;
   margin-right: 8px;
   color: var(--accent-color);
 }
 
-.service-details .services-list a.active {
+.servicos .services-list a.active {
   color: var(--contrast-color);
   background-color: var(--accent-color);
 }
 
-.service-details .services-list a.active i {
+.servicos .services-list a.active i {
   color: var(--contrast-color);
 }
 
-.service-details .services-list a:hover {
+.servicos .services-list a:hover {
   background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
   color: var(--accent-color);
 }
 
-.service-details .download-catalog a {
+.servicos .download-catalog a {
   color: var(--default-color);
   display: flex;
   align-items: center;
@@ -1704,67 +1708,67 @@ section,
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
-.service-details .download-catalog a:first-child {
+.servicos .download-catalog a:first-child {
   border-top: 0;
   padding-top: 0;
 }
 
-.service-details .download-catalog a:last-child {
+.servicos .download-catalog a:last-child {
   padding-bottom: 0;
 }
 
-.service-details .download-catalog a i {
+.servicos .download-catalog a i {
   font-size: 24px;
   margin-right: 8px;
   color: var(--accent-color);
 }
 
-.service-details .download-catalog a:hover {
+.servicos .download-catalog a:hover {
   color: var(--accent-color);
 }
 
-.service-details .help-box {
+.servicos .help-box {
   background-color: var(--accent-color);
   color: var(--contrast-color);
   margin-top: 30px;
   padding: 30px 15px;
 }
 
-.service-details .help-box .help-icon {
+.servicos .help-box .help-icon {
   font-size: 48px;
 }
 
-.service-details .help-box h4,
-.service-details .help-box a {
+.servicos .help-box h4,
+.servicos .help-box a {
   color: var(--contrast-color);
 }
 
-.service-details .services-img {
+.servicos .services-img {
   margin-bottom: 20px;
 }
 
-.service-details h3 {
+.servicos h3 {
   font-size: 26px;
   font-weight: 700;
 }
 
-.service-details p {
+.servicos p {
   font-size: 15px;
 }
 
-.service-details ul {
+.servicos ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.service-details ul li {
+.servicos ul li {
   padding: 5px 0;
   display: flex;
   align-items: center;
 }
 
-.service-details ul i {
+.servicos ul i {
   font-size: 20px;
   margin-right: 8px;
   color: var(--accent-color);
