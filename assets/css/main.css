@@ -536,6 +536,13 @@ h6 {
   .mobile-nav-active .navmenu>ul {
     display: block;
   }
+
+  .logo img {
+    max-width: 80px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+  }
+
+
 }
 
 /*--------------------------------------------------------------
