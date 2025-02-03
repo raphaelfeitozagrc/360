@@ -537,12 +537,14 @@ h6 {
     display: block;
   }
 
-  .logo img {
-    max-width: 80px; /* Ajuste o tamanho conforme necessário */
-    height: auto;
+  .grc-logo {
+    display: none;
   }
 
-
+  .vr-none {
+    display: none;
+  }
+ 
 }
 
 /*--------------------------------------------------------------
